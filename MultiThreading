@@ -1,0 +1,33 @@
+class A implements Runnable  // Multithreading in java
+{
+    public void run()
+    {
+        for(int i=1; i<=100; i++)
+        {
+            System.out.println("i = \n"+i);
+        }
+    }
+}
+class B implements Runnable // class
+{
+    public void run()  // method
+    {
+        for(int j=1; j<=100; j++)
+        {
+            System.out.println("j = \n"+j);
+        }
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        A a = new A();
+        B b = new B();
+        
+        Thread t1 = new Thread(a);
+        Thread t2 = new Thread(b);
+        
+        t1.start();
+        t2.start();
+    }
+}
