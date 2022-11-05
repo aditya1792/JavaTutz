@@ -1,0 +1,27 @@
+/*
+     java.lang.String => Immutable (Can not be modified)
+     java.lang.StringBuffer => Mutable  (Can be modified)
+*/
+//Replacing a character in the string
+
+
+ public class Main
+ {
+     public static void main(String [] args)
+     {
+         String s1 = "Computer";
+         
+         String s2 = s1.replace('C','D');
+         
+         System.out.println("s1 = "+s1);
+         System.out.println("s2 = "+s2);
+     }
+ }
+ 
+ //Notice replacement of 'C' with 'D'.
+ 
+ 
+
+
+
+  
