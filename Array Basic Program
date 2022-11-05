@@ -1,0 +1,42 @@
+
+          import java.util.*; 
+
+    public class ArrayDemo7
+    {
+          public static void main(String [] args)
+          {
+               Scanner s = new Scanner(System.in);
+
+                 int size, i, prod=1;
+
+               System.out.println("\n Enter size : ");
+                   size = s.nextInt();
+
+                 int [] x = new int[size];  
+
+               System.out.println("\n Enter nums : ");
+                 for(i=0 ; i<size ; i++)
+                 {
+                     x[i] = s.nextInt(); 
+                 }         
+
+
+               for(i=0 ; i<size ; i++)
+               {
+                   prod = prod * x[i];
+               }
+
+               for(i=0 ; i<size ; i++)
+               {
+                  x[i] = prod / x[i];  
+               }
+
+              System.out.println("\n List : ");
+                  for(i=0 ; i<size; i++)
+                  {
+                     System.out.print("  "+x[i]);
+                  }
+          } 
+    }
+
+
