@@ -1,0 +1,25 @@
+/*
+     java.lang.String => Immutable (Can not be modified)
+     java.lang.StringBuffer => Mutable  (Can be modified)
+*/
+
+public class Main
+{
+    public static void main(String [] args)
+    {
+        String s1 = "Computer"; //Upper Case
+        String s2 = "computer" ;//Lower Case
+        
+        int i = s1.compareToIgnoreCase(s2);
+    
+    
+    if(i==0)
+    {
+        System.out.println("Same");
+    }
+    else
+    {
+        System.out.println("Not Same");   
+    }
+    }
+}
