@@ -1,0 +1,24 @@
+/*
+     java.lang.String => Immutable (Can not be modified)
+     java.lang.StringBuffer => Mutable  (Can be modified)
+*/
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String [] args)
+    {
+       string s1 = "Computer";
+       string s2 = "Computer";
+       
+       if(s1.equals(s2)) // Note**
+       {
+           System.out.println("Equal ");
+       }
+       else
+       {
+           System.out.println("Not Equal ");
+       }
+    }
+}
