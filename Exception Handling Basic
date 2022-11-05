@@ -1,0 +1,26 @@
+public class  Main // Always ave the file with class name, here its done on online compiler that's why Main...
+{
+    public static void main(String [] args)
+    {
+        int a  =10, b = 0, ans = 0;
+        
+        int x [] = {10,20};
+        
+        try 
+        {
+            ans  =  x[3]/(b+1);
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.println(e);
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println(e);
+        }
+        finally
+        {
+            System.out.println("ans = "+ans);
+        }
+    }
+}    //This will give ArrayIndexOutofBounds Exception but if you divide ans by b instead of b+1, it will give ArithmeticException.
