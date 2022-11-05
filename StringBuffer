@@ -1,0 +1,17 @@
+//String and StringBuffer are both present in java.lang the only difference being String
+// is immutable whereas StringBuffer is mutable i.e. it can be modified..........
+//Appending and reversing strings
+public class Main
+{
+    public static void main(String [] args)
+    {
+        StringBuffer str = new StringBuffer("Computer");
+        
+        str.append("Programming"); //Appends programming to computer.
+        str.insert(0,"Java");//Inserts java before computer programming.
+        //str.setCharAt(0,'j');//If u want j to be in lower case then only write this line...
+        str.reverse();
+        
+        System.out.println("str = "+str);
+    }
+}
