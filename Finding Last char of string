@@ -1,0 +1,24 @@
+/*
+     java.lang.String => Immutable (Can not be modified)
+     java.lang.StringBuffer => Mutable  (Can be modified)
+*/
+//Finding the last character of string
+//Last char kaha milegaa? Size-1 pe! yaa length - 1 pe
+
+ public class Main
+ {
+     public static void main(String [] args)
+     {
+         String s1 = "Computer";
+         
+         char ch = s1.charAt(s1.length()-1);
+         
+         System.out.println("ch = "+ch);
+     }
+ }
+ 
+ 
+
+
+
+  
