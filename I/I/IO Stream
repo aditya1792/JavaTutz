@@ -1,0 +1,26 @@
+
+      import java.io.*; //Important
+         
+    public class Main
+    {
+          public static void main(String [] args)
+          {
+ 
+   BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+   
+      try
+      {
+          System.out.println("\n Enter 2 nums : ");
+
+          int a = Integer.parseInt(br.readLine());
+          int b = Integer.parseInt(br.readLine());
+    
+             System.out.println("\n Add = "+(a+b));
+      }
+      catch(Exception e)
+      {
+          
+      }
+          
+    } 
+}
