@@ -1,0 +1,44 @@
+//Linear search in java...
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String [] args)
+    {
+        int i, size, num, pos = 0;
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter the size of array");
+        size = sc.nextInt();
+        
+        int [] x = new int[size];
+        
+        System.out.println("Enter the numbers");
+        for(i=0;i<size;i++)
+        {
+            x[i] = sc.nextInt();
+        }
+        System.out.println("Enter number to be searched");
+        num = sc.nextInt();
+        
+        for(i=0;i<size;i++)
+        {
+            if(num == x[i])
+            {
+                pos = i+1;
+                break;
+            }
+        }
+        
+        if(pos == 0)
+        {
+            System.out.println("Num not found");
+        }
+        else
+        {
+            System.out.println("pos = "+pos);
+        }
+    }
+}
