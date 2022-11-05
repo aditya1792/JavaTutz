@@ -1,0 +1,32 @@
+/*
+     java.lang.String => Immutable (Can not be modified)
+     java.lang.StringBuffer => Mutable  (Can be modified)
+*/
+
+  public class CompareTo
+  {
+      public static void main(String [] args)
+      {
+          String s1 = "Computer";
+          String s2 = "Computer";  // It checks the Ascii value by subtracting and thus tells us whether the length/ size to be more precise is same or not.
+                                   //It is case sensitive.
+                                   //Don't worry, we have a method to tackle case sensitivity issue but I'll show it in next program.
+
+          int i = s1.compareTo(s2); //Note
+
+           if(i == 0)
+           {
+              System.out.println("\n SAME ");
+           }
+           else
+           {
+              System.out.println("\n NOT SAME ");
+           }
+      } 
+  }
+
+
+
+
+
+  
