@@ -1,0 +1,35 @@
+  import java.util.*; 
+
+    public class Main
+    {
+          public static void main(String [] args)
+          {
+               Scanner s = new Scanner(System.in);
+
+                 int size, i, j;
+
+               System.out.println("\n Enter size : ");
+                   size = s.nextInt();
+
+                 int [] x = new int[size];  
+
+               System.out.println("\n Enter nums : ");
+                 for(i=0 ; i<size ; i++)
+                 {
+                     x[i] = s.nextInt(); 
+                 }
+                 
+                 for(i=0,j=size-1; i<size/2; i++,j--)
+                 {
+                     int temp = x[i];  //Swapping
+                     x[i] = x[j];
+                     x[j] = temp;
+                 }
+                 
+                 System.out.println("List after reverse:");
+                 for(i=0;i<size;i++)
+                 {
+                     System.out.println(" "+x[i]);
+                 }
+          }
+    }
