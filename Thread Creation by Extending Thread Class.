@@ -1,0 +1,15 @@
+class Main extends Thread
+{
+    public void run()
+    {
+        System.out.println("My Thread is in running state");
+    }
+    
+    public static void main(String args [])
+    {
+        Main obj = new Main();
+        obj.start();
+    }
+}
+
+// Creation of thread 😅
