@@ -1,0 +1,42 @@
+         
+     interface Addition
+     {
+          public void add(int a, int b);
+     }
+
+     interface Multiplication
+     {
+          public void mul(int a, int b);
+     }
+
+     interface Sample extends Addition , Multiplication
+     {
+
+     }
+
+     class Abc implements Sample
+     {
+           public void add(int a, int b)
+           {
+                 System.out.println("\n Add = "+(a+b)); 
+           }
+
+           public void mul(int a, int b)
+           {
+                 System.out.println("\n Mul = "+(a*b)); 
+           }
+     }
+
+    public class Main
+    {
+          public static void main(String [] args)
+          {
+                    Abc obj = new Abc();
+
+                     Addition a = obj;
+                       a.add(10 , 20);
+
+                     Multiplication m = obj;
+                          m.mul(2, 3);
+          } 
+    }
