@@ -1,0 +1,46 @@
+/*
+     Run-Time Ploymorphism
+
+     Object of type super-class can take memory of its sub-class object
+     But, it can call only those members which are present in its super-class. 
+*/   
+
+class Car
+{
+    public void start()
+    {
+        System.out.println("Class Car");
+    }
+}
+
+class BMW extends Car
+{
+    public void start()
+    {
+        System.out.println("BMW Car");
+    }
+    
+    public void stop()
+    {
+        System.out.println("stop() of BMW Car");
+    }
+}
+
+class AUDI extends Car
+{
+    public void start()
+    {
+        System.out.println("Audi Car");
+    }
+}
+
+public class Main
+{
+    public static void main(String [] args)
+    {
+        Car c;
+        
+        c = new BMW();
+        c.start();
+    }
+}
